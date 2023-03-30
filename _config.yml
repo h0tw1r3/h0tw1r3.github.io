@@ -201,3 +201,4 @@ jekyll-archives:
 
 plugins:
   - jekyll-openmoji
+  - jekyll-gist
