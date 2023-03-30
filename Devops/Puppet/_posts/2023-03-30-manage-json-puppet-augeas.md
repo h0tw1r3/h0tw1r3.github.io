@@ -58,11 +58,11 @@ Suppose you want to change the port number for the "server" section from 8080 to
    cd /tmp && puppet apply myapp.pp
    ```
 
-   ```output
-   Notice: Compiled catalog for test.local in environment production in 0.02 seconds
-   Notice: /Stage[main]/Main/Augeas[change_server_port]/returns: executed successfully
-   Notice: Applied catalog in 0.02 seconds
-   ```
+   Output:
+
+       Notice: Compiled catalog for test.local in environment production in 0.02 seconds
+       Notice: /Stage[main]/Main/Augeas[change_server_port]/returns: executed successfully
+       Notice: Applied catalog in 0.02 seconds
 
 3. Review the JSON configuration file. Notice Puppet changed the value!
 
@@ -168,11 +168,11 @@ How about managing arbitrary dictionary values from [hiera]?
    cd /tmp && puppet apply --hiera_config hiera.yaml myapp.pp
    ```
 
-   ```output
-   Notice: Compiled catalog for test.local in environment production in 0.04 seconds
-   Notice: /Stage[main]/Myapp/Augeas[myapp]/returns: executed successfully
-   Notice: Applied catalog in 0.04 seconds
-   ```
+   Output:
+
+       Notice: Compiled catalog for test.local in environment production in 0.04 seconds
+       Notice: /Stage[main]/Myapp/Augeas[myapp]/returns: executed successfully
+       Notice: Applied catalog in 0.04 seconds
 
 5. Review the JSON configuration file. Notice Puppet changed the value!
 
